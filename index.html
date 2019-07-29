@@ -11,24 +11,26 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/bubbles.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <script defer src="./index.js"></script>
 
   </head>
 
-  <body>
+  <body id="body">
+    <nav class="navbar mx-auto">
+      <h3 class="navbar-brand name">Renan Barreto Garcia</h3>
+      <ul class="main-menu text-md-right text-center align-middle mx-auto">
+        <li><a href="#top">Eu</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+    </nav>
 
     <div id="splash">
       <div class="section">
-        <header>
-          <nav class="navbar mx-auto">
-            <h3 class="navbar-brand name">Renan Barreto Garcia</h3>
-            <ul class="main-menu text-md-right text-center align-middle mx-auto">
-              <li>Eu</li>
-              <li>Projetos</li>
-            </ul>
-          </nav>
+        <header id="top">
+          <div class="filling"></div>
           <div class="top-content text-center mx-auto splash-box">
-            <h2>Renan Garcia<h2>
+            <h2 class="primary-name">Renan Garcia<h2>
             <h1>Estudante de Desenvolvimento Front-End</h1>
             <h4>Atualmente estudando e fuçando com</h4>
             <span class="pill">Angular</span>,
@@ -39,11 +41,12 @@
             <span class="pill">OAuth</span>
             <span class="pill">Sass</span>
             <span class="pill">etc.</span>
+            <p><a href="mailto:bg_renan@hotmail.com">bg_renan@hotmail.com</a> | <a href="https://wa.me/5519989165220">(19) 98916-5220</a></p>
           </div>
         </header>
-        <div class="content-container row">
-          <h2 class="text-center col-12">Características</h2>
-          <div class="spec-box col-sm-12 icon-container flex-column flex-md-row align-items-center justify-content-around">
+        <div class="row jumbotron">
+          <h1 class="text-center col-12 title">{ Características }</h1>
+          <div class="col-sm-12 icon-container flex-column flex-md-row align-items-center justify-content-around">
             <div class=" d-flex align-items-center">
               <i class="fas fa-3x fa-heart icon-margin"></i> <strong> Dedicado</strong>
             </div>
@@ -55,111 +58,128 @@
             </div>
           </div>
         </div>
+
+        <div id="projetos" class="content-container row">
+          <h1 class="col-12 text-center title">{ Projetos }</h1>
+        </div>
+
         <div class="content-container row">
-          <h2 class="col-12 text-center">Projetos</h2>
-          <div class="spec-box d-flex justify-content-center text-center text-md-left col-sm-3">
-            <img class="project-image" src="images/screen-lingo.png">
+          <div class="col-sm-3 col-md-4 my-auto">
+            <img class="project-image image-fluid" src="images/screen-lingo.png">
           </div>
-          <div class="spec-box d-flex justify-content-center text-center text-md-left col-sm-3">
-              <img class="project-image" src="images/screen-lingo2.png">
+          <div class="col-sm-3 col-md-4 my-auto">
+              <img class="project-image image-fluid" src="images/screen-lingo2.png">
           </div>
-          <div class="spec-box d-flex flex-column justify-content-center text-center text-md-left col-sm-6">
+          <div class="spec-box d-flex flex-column justify-content-center text-center text-md-left col-sm-6 col-md-4">
             <div class="card">
               <h3 class="title">Treino de vocabulário</h3>
-              <div class="row">
-              <div class="col-4">
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Angular</strong> </span><br>
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Node.js</strong> </span><br>
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Google OAuth</strong> </span>
+              <div class="">
+                <span class="pill">Angular</span>
+                <span class="pill">Restful API</span>
+                <span class="pill">Node.js</span>
+                <span class="pill">Express</span>
+                <span class="pill">MongoDB</span>
+                <span class="pill">OAuth</span><br>
+                <span class="pill">Google APIs</span>
+                <span class="pill">MediaWiki API</span>
+                <span class="pill">Materialize</span>
               </div>
-              <div class="col-4">
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Angular</strong> </span><br>
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Node.js</strong> </span><br>
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Google OAuth</strong> </span>
-              </div>
-              <div class="col-4">
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Angular</strong> </span><br>
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Node.js</strong> </span><br>
-                <span><i class="fas fa-check-circle dark-blue"></i> <strong>Google OAuth</strong> </span>
-              </div>
-              </div>
+              <strong>
+                <a class="text-success" href="http://barretogarcia.com.br/lingotreino/">http://barretogarcia.com.br/lingotreino/</a>
+              </strong>
+              <strong>
+                <a class="text-success" href="https://github.com/renanbgarcia/LingoTreno">https://github.com/renanbgarcia/LingoTreno</a>
+              </strong>
               <p class="mt-3">Projeto em andamento para aprendizado de Angular e Rest APIs com Node.js.</p>
               <p class="mt-3">O aplicativo permite que o usuário faça login usando sua conta Google,
                 veja citações aleatórias vindas do Wikiquotes, salve citações, salve palavras com informações de significado
                 e nível de conhecimento, e pratique com um joguinho de flashcards com as palavras já salvas.
               </p>
               <p class="mt-3">São suportados o inglês e o francês.</p>
-              <p class="mt-3">O layout, por enquanto, só foi projetado para mobile.</p>
+              <p class="mt-3 text-warning">**O layout, por enquanto, só foi projetado para mobile.</p>
             </div>
           </div>
         </div>
-        <div class="bubbles-container">
-          <div id="background-wrap">
-            <div class="bubble x1"></div>
-            <div class="bubble x2"></div>
-            <div class="bubble x3"></div>
-            <div class="bubble x4"></div>
-            <div class="bubble x5"></div>
-            <div class="bubble x6"></div>
-            <div class="bubble x7"></div>
-            <div class="bubble x8"></div>
-            <div class="bubble x9"></div>
-            <div class="bubble x10"></div>
-            <div class="row">
-              <div class="spec-box d-flex flex-column justify-content-center text-center text-md-left col-sm-6">
-                <img class="img-fluid image-fluid-small" src="./images/phone.png" alt="code">
+
+        <div class="row">
+          <img class="image-fluid project-image col-12 col-md-6 mx-auto" src="images/separator.png">
+        </div>
+
+        <div class="content-container row">
+          <div class="spec-box d-flex flex-column justify-content-center text-center text-md-left col-sm-6 col-md-4">
+            <div class="card">
+              <h3 class="title">Restaurante de Roma</h3>
+              <div class="">
+                <span class="pill">React</span>
+                <span class="pill">Restful API</span>
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">Javascript</span>
+                <span class="pill">Google APIs</span>
               </div>
-              <div class="spec-box d-flex flex-column justify-content-center text-center text-md-left col-sm-6">
-                <div class="long-card"></div>
-                <h3 class="title zindex">Tudo do que você precisa</h3>
-                <span class="zindex"><i class="fas fa-check-circle dark-blue"></i> <strong>Android</strong> </span>
-                <span class="zindex"><i class="fas fa-check-circle dark-blue"></i> <strong>Iphone</strong> </span>
-                <p class="mt-3 zindex">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <strong>
+                <a class="text-success" href="https://restaurantesderoma.herokuapp.com/">https://restaurantesderoma.herokuapp.com/</a>
+                <p class="mt-3 text-warning">**O servidor para quando não há atividade (plano grátis).
+                  Tente acessar e espere alguns minutos para que o servidor reinicie.</p>
+              </strong>
+              <strong>
+                <a class="text-success" href="https://github.com/renanbgarcia/mapadobairro">https://github.com/renanbgarcia/mapadobairro</a>
+              </strong>
+              <p class="mt-3">Web appp simples feito com React, utilizando a API do Flicker e do Google Maps.</p>
+              <p class="mt-3">O aplicativo permite selecionar entre algumas localidades predefidas e visualizar
+                as últimas fotos postadas no Flicker nos arredores dessa localização.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 my-auto">
+            <img class="project-image img-explode" src="images/approma.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <img class="image-fluid project-image col-12 col-md-6 mx-auto" src="images/separator.png">
+        </div>
+
+        <div class="content-container row">
+          <div class="col-sm-3 col-md-4 my-auto">
+            <img class="project-image image-fluid" src="images/myreads.png">
+          </div>
+          <div class="col-sm-3 col-md-4 my-auto">
+              <img class="project-image image-fluid" src="images/myreads2.png">
+          </div>
+          <div class="spec-box d-flex flex-column justify-content-center text-center text-md-left col-sm-6 col-md-4">
+            <div class="card">
+              <h3 class="title">MyReads</h3>
+              <div class="">
+                <span class="pill">React</span>
+                <span class="pill">Restful API</span>
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">Javascript</span>
               </div>
-              <button class="button-big col-6 mx-auto">Contratar agora</button>
+              <strong>
+                <a class="text-success" href="https://github.com/renanbgarcia/myreads">https://github.com/renanbgarcia/myreads</a>
+              </strong>
+              <p class="mt-3">Esse é um projeto para o Nanodegree de Desenvolvimento Web da Udacity.
+                É um projeto de aplicativo para organização de livros utilizando React.js
+                Ele possue a capacidade de listar livros em três categorias, à ler, lidos e lendo,
+                que podem ser mudados de categoria a qualquer momento. Ele também possui a capacidade
+                de perquisar por livros disponíveis no servidor.                
+              </p>
             </div>
           </div>
         </div>
-        <div class="content-container row justify-content-center align-items-center pt-1">
-          <div class="col-12 col-md-2 d-flex flex-column text-center col-links">
-            <h5>Empresa</h5>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
-          </div>
-          <div class="col-12 col-md-2 d-flex flex-column text-center col-links">
-            <h5>Desenvolvimento</h5>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
-          </div>
-          <div class="col-12 col-md-2 d-flex flex-column text-center col-links">
-            <h5>Comunidade</h5>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
-          </div>
-          <div class="col-12 col-md-2 d-flex flex-column text-center col-links">
-            <h5>Informação</h5>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
-          </div>
-        </div>
+
         <footer class="row align-items-center">
-          @ Renan Garcia - 2019
-          <div class="ml-auto col-2 d-flex justify-content-around">
-            <i class="fab fa-2x fa-twitter-square"></i>
-            <i class="fab fa-2x fa-facebook-square"></i>
-            <i class="fab fa-2x fa-google-plus-square"></i>
+          © Renan Garcia
+          <div class="ml-auto col-6 col-md-3 d-flex justify-content-around">
+            <a href="https://github.com/renanbgarcia"><i class="fab fa-2x fa-github"></i></a>
+            <a href="https://wa.me/5519989165220"><i class="fab fa-2x fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/renangarcia/"><i class="fab fa-2x fa-linkedin-in"></i></a>
           </div>
         </footer>
       </div>
     </div>
-
   </body>
 
 </html>
